@@ -21,10 +21,12 @@
 							query: {
 								address: $event.value
 							}
-						})
+						});						
+          	fetchWeather($event.latlng)
           "
           v-on:query-selected="
           	changeCity($event);
+          	fetchWeather($event.latlng)
           ">               
         </algolia-place-field>
         <div class="col-md-4 pl-md-0">
@@ -43,13 +45,6 @@
 				formData: {
 					address: this.$route.query.address || ''
 				},
-			}
-		},
-		watch: {
-			'city.name': function(name) {
-				if (name) {
-					this.fetchWeather(this.city.latlng)
-				}
 			}
 		},
 		computed: {
