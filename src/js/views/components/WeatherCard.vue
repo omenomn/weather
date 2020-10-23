@@ -27,7 +27,7 @@
           :to="{
             name: 'details',
             query: {
-              address: $route.query.address || city.query
+              address: $route.query.address
             }
           }">Więcej</router-link>
       </div>

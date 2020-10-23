@@ -10,7 +10,6 @@
         <algolia-place-field
         	:no-label="true"
           name="address"
-          label="Address"
           :class="['col-md-8']"
           :search-type="['city']"
           :conf="algoliaConf"
@@ -45,6 +44,7 @@
 				formData: {
 					address: this.$route.query.address || ''
 				},
+				reloadKey: 0,
 			}
 		},
 		computed: {
