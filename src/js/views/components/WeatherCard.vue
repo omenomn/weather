@@ -11,7 +11,7 @@
   				<span class="text-lighter ml-1">{{now}}</span>
   			</h4>
   			<h4 class="my-2">
-  				<span>Lokalizacjia:</span> 
+  				<span>Lokalizacja:</span> 
   				<span class="text-lighter ml-1">{{city.name}}, <span class="uppercase">{{city.countryCode}}</span></span>
   			</h4>
   			<h4 class="my-2">
@@ -24,7 +24,12 @@
       <div class="col-md-12 text-right">        
         <router-link
           class="more-link uppercase"
-          :to="{name: 'details'}">Więcej</router-link>
+          :to="{
+            name: 'details',
+            query: {
+              address: $route.query.address || city.query
+            }
+          }">Więcej</router-link>
       </div>
     </div>
   </div>

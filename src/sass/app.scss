@@ -6,15 +6,16 @@
 @import "components/helpers";
 @import "components/btn";
 @import "components/card";
+@import "components/table";
 
 html, body {
 	height: 100%;
-	padding: 0px;
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
 }
 
 .main {
+	padding: 50px 0px;
 	background-image: url('/dist/img/clouds3.jpg');
 	background-size: 100% auto;
 	background-position: center center;
@@ -31,4 +32,16 @@ html, body {
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.start-headling {
+	font-size: 60px;
+	text-align: center;
+}
+
+.back-link {
+	font-size: 30px;	
+	text-decoration: none;
+	margin-bottom: 15px;
+	display: block;
 }

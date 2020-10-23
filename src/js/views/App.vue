@@ -3,7 +3,7 @@
 		<div class="d-table-cell align-middle">
 			<div class="container">
 				<div class="row">
-			    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+			    <div class="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 						<router-view/>
 			    </div>
 				</div>				

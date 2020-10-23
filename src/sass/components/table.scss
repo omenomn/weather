@@ -1,0 +1,19 @@
+.table {
+	width: 100%;
+	color: #fff; 
+	border-spacing: 5px;
+	font-size: 16px;
+
+	th {
+		font-weight: bold;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	td {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background: $transparent-white-bg;
+		width: 33.33%;
+	}
+}
