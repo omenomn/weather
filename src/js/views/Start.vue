@@ -30,6 +30,11 @@
 				reloadKey: 0,
 			}
 		},
+		watch: {
+			'$route.query.address': function() {
+				this.reloadKey++
+			}
+		},
 		computed: {
 			weather() {
 				return this.$store.getters['weather']
