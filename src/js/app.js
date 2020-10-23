@@ -6,13 +6,9 @@ moment.locale('pl');
 import Vue from 'vue';
 import Vuex from 'vuex'
 import VueRouter from 'vue-router';
-import GooglePlacesAutocompletePlugin from 'vue-better-google-places-autocomplete'
-import VuePlaceAutocomplete from 'vue-place-autocomplete';
 import VueForm from 'vue-form'
 
 Vue.use(VueRouter)
-Vue.use(GooglePlacesAutocompletePlugin)
-Vue.use(VuePlaceAutocomplete);
 Vue.use(VueForm);
 
 import App from './views/App.vue';
